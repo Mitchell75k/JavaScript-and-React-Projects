@@ -1,0 +1,23 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello React</title>
+    </head>
+    <body>
+        <!-- <h1>Telling the user that the react page is loading...</h1> -->
+        <div id="root">
+            <h1>First React page rendering...</h1>
+        </div>
+        <!--these are the libraries needed for react to work and render the page-->
+        <script crossorigin="" src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin="" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
+
+        <!--this is the script that will render the react page-->
+        <script>
+            const App = React.createElement("h1", {}, "Our First React page has rendered");
+            ReactDOM.render(App, document.getElementById("root"));
+        </script>
+        <!-- What did we do here? We used a React method that returns a new React Element (also known as a component) and assigns it to our App variable -->
+        
+    </body>
+</html>
